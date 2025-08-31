@@ -1,4 +1,4 @@
-<nav>
+<nav class="p-2 bg-[var(--primary-color)]">
     <div class="flex justify-between">
         <div>
             <input class="p-2 border rounded" type="text" placeholder="Search Anime">
