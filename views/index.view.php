@@ -1,9 +1,10 @@
 <?php require "partials/head.php" ?>
 
-<body class="px-[3em] py-[1em]">
+<body class="px-[5%] py-[1em]">
     <?php require 'partials/navigation.php' ?>
     <main>
-        <?= include "partials/topAiringAnime.php"; ?>
+        <?php require "partials/topAiringAnime.php"; ?>
+        
     </main>
 </body>
 </html>
