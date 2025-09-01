@@ -1,15 +1,8 @@
-.carousel{
-    position: absolute;
-}
-
 .slide{
     position: absolute;
     opacity: 0;
 }
 
-.slide > image{
-    
-}
 
 .slide[data-active]{
     opacity: 1;
