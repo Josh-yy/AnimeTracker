@@ -1,6 +1,6 @@
 <?php 
 
-require 'api/topAnime.php';
+require 'api/currentTop10Anime.php';
 
 $topAnimes = getTopAnime();
 
