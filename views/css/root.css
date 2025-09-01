@@ -1,9 +1,58 @@
 :root{
     --text-black: #1f1f1f;
+    --text-black-hover: #000000;
     --text-white: #f1f1f1;
+    --text-white-hover: #ffffff;
 
 
     /* Color Theme — Edit as the project needed */
-    --primary-color: #8B575C;
+    --primary-background-color: #1c1112;
+    --tint-background-color:#8B575C;
+    --primary-color: #3DAEC2;
+    --primary-color-hover: #2b7d8b;
     --secondary-color: 
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: "Archivo", sans-serif;
+    background-color: var(--primary-background-color);
+    color: var(--text-white);
+}
+
+.primary-button{
+    border: 1px solid var(--primary-color);
+    border-radius: .5em;
+    background-color: var(--primary-color);
+    color: var(--text-black);
+    font-weight: 500;
+    padding: .2em 1em;
+}
+
+.primary-button:hover{
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color-hover);
+    color: var(--text-black-hover);
+}
+
+.secondary-button{
+    border: 1px solid var(--primary-color);
+    border-radius: .5em;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: .2em 1em;
+}
+
+.secondary-button:hover{
+    background-color: var(--primary-color-hover);
+    border: 1px solid var(--primary-color-hover);
+    color: var(--text-black-hover);
 }

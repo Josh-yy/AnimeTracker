@@ -1,4 +1,8 @@
 <?php 
 
-require('views/index.view.php');
+require 'api/topAnime.php';
+
+$topAnimes = getTopAnime();
+
+require 'views/index.view.php';
 
