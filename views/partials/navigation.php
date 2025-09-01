@@ -1,5 +1,5 @@
 <nav class="flex justify-between">
-    <div class="flex w-[40%] gap-2">
+    <div class="flex w-[40%] gap-6">
         <div class="w-[20%]">
             <img class="object-contain" src="/public/external/Logo_Transparent_BG_v1.png" alt="Logo Picture">
         </div>
@@ -12,5 +12,4 @@
         <button class="primary-button">Login</button>
         <button class="secondary-button">Register</button>
     </div>
-    
 </nav>
