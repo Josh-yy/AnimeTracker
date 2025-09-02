@@ -3,7 +3,8 @@
 $url = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 $routes = [
-    '/' => 'controllers/index.php',
+    '/' => 'controllers/home/index.php',
+    '/search' => 'controllers/home/search.php',
 ];
 
 function routeToController($url, $routes){
