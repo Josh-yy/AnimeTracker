@@ -46,3 +46,23 @@
 [data-carousel-button=prev]{
     left: 5em;
 }
+
+.search-filter-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  padding: .2em;
+  right : .3em;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  color: var(--text-black);
+}
+
+.search-filter-button:hover{
+  background-color: rgb(158, 158, 158);
+  color: black;
+}
