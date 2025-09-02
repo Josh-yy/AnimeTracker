@@ -5,7 +5,7 @@
         <ul data-slides>
             <?php foreach($topAnimes['data'] as $index => $anime): ?>
                 <li class="slide flex  rounded justify-end items-end" <?= $index === 0 ? "data-active" : ""  ?>>
-                    <div class="slide-details absolute w-[50%] left-0 flex flex-col gap-5">
+                    <div class="slide-details absolute z-[150] w-[50%] left-0 flex flex-col gap-5">
 
                         <h1 class="text-[var(--primary-color)] font-bold">#<?= $index + 1 ?> Airing</h1>
 
