@@ -2,12 +2,13 @@
     --text-black: #1f1f1f;
     --text-black-hover: #000000;
     --text-white: #f1f1f1;
+    --tint-text-white: #b8b8b8;
     --text-white-hover: #ffffff;
 
 
     /* Color Theme — Edit as the project needed */
     --primary-background-color: #1c1112;
-    --tint-background-color:#442b2e;
+    --tint-background-color:#1d1415;
     --primary-color: #3DAEC2;
     --primary-color-hover: #2b7d8b;
     --secondary-color: 
@@ -55,4 +56,13 @@ body{
     background-color: var(--primary-color-hover);
     border: 1px solid var(--primary-color-hover);
     color: var(--text-black-hover);
+}
+
+.input-field{
+    border-radius: .2em;
+    width: 100%;
+    padding: .2em 1em;
+    background-color: transparent;
+    border: 1px var(--tint-text-white) solid;
+    color: var(--tint-text-white);
 }
