@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="views/css/root.css">
         <link rel="stylesheet" href="views/css/home.css">
+        <link rel="stylesheet" href="views/css/login-modal.css">
 
         <script src="/views/js/home.js" defer></script>
         <script src="/views/js/searchAnime.js" defer></script>
