@@ -1,0 +1,32 @@
+#modal-backdrop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 500;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    
+    /* background-color: rgba(0, 0, 0, 0.226); */
+}
+
+.login-image-con img{
+    -webkit-mask-image: 
+        linear-gradient(to right, black 80%, transparent),
+        linear-gradient(to left, black 80%, transparent),
+        linear-gradient(to top, black 80%, transparent),
+        linear-gradient(to bottom, black 80%, transparent);
+    -webkit-mask-composite: intersect; /* Chrome/Safari */
+    -webkit-mask-repeat: no-repeat;
+
+    mask-image: 
+        linear-gradient(to right, black 80%, transparent),
+        linear-gradient(to left, black 80%, transparent),
+        linear-gradient(to top, black 80%, transparent),
+        linear-gradient(to bottom, black 80%, transparent);
+    mask-composite: intersect; /* Firefox */
+    mask-repeat: no-repeat;
+
+}
+
+
