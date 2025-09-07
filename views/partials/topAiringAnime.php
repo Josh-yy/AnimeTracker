@@ -1,4 +1,4 @@
-<section aria-label="Intro" id="carousels" class="mt-6">
+<section aria-label="Intro" id="carousels" class="mt-6 min-h-[80vh]">
     <div class="carousel" data-carousel>
         <button class="carousel-button-next secondary-button py-4 " data-carousel-button="next">></button>
         <button class="carousel-button-prev secondary-button py-4 " data-carousel-button="prev"><</button>
