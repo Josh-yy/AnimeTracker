@@ -5,7 +5,7 @@
     <main>
         <?php require "modals/login.php" ?>
         <?php require "partials/topAiringAnime.php"; ?>
-        
+        <?php require "partials/topAnimeTvSeries.php"; ?>
     </main>
 </body>
 </html>
