@@ -6,7 +6,9 @@
     z-index: 500;
     inset: 0;
     backdrop-filter: blur(10px);
-    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     /* background-color: rgba(0, 0, 0, 0.226); */
 }
 
@@ -26,7 +28,57 @@
         linear-gradient(to bottom, black 80%, transparent);
     mask-composite: intersect; /* Firefox */
     mask-repeat: no-repeat;
+}
 
+.bocchi{
+    mask-image:
+        linear-gradient(to right, black 90%, transparent),
+        linear-gradient(to left, black 90%, transparent),
+        linear-gradient(to top, black 90%, transparent), 
+        linear-gradient(to bottom, var(--tint-background-color) 40%, transparent);
+    mask-composite: intersect; /* Firefox */
+    mask-repeat: no-repeat;
+}
+
+
+.dataMistShow{
+    animation: showMist 1s linear forwards;
+}
+
+.dataMistHide{
+    animation: hideMist 1s linear forwards;
+}
+
+@keyframes hideMist {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+        visibility: visible;
+    }
+    to {
+        transform: translateX(-100px);
+        opacity: 0;
+        filter: blur(100px);
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+@keyframes showMist {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+        filter: blur(100px);
+        visibility: hidden;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+        visibility: visible;
+        pointer-events: auto;
+    }
 }
 
 
