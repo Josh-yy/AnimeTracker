@@ -14,6 +14,9 @@
 
         <script src="/views/js/home.js" defer></script>
         <script src="/views/js/searchAnime.js" defer></script>
+        <script src="/views/js/login-modal.js" defer></script>
+        <script src="/views/js/navigation.js" defer></script>
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
