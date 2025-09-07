@@ -1,6 +1,8 @@
 <?php 
 
 require 'class/Api.php';
+require 'class/Database.php';
+
 
 $anime = new Api();
 
