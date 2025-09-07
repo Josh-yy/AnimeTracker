@@ -2,13 +2,14 @@
     --text-black: #1f1f1f;
     --text-black-hover: #000000;
     --text-white: #f1f1f1;
-    --tint-text-white: #b8b8b8;
+    --tint-text-white: #bbb8b8;
     --text-white-hover: #ffffff;
 
 
     /* Color Theme — Edit as the project needed */
     --primary-background-color: #1c1112;
-    --tint-background-color:#1d1415;
+    --tint-background-color:#33292a;
+    --border-color:#494141;
     --primary-color: #3DAEC2;
     --primary-color-hover: #2b7d8b;
     --secondary-color: 
