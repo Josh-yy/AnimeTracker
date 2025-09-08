@@ -8,32 +8,52 @@
         </div>
     </div>
     <div class="flex gap-2 relative">
-        <?php foreach ($topTvSeries['data'] as $anime): ?>
+        <?php foreach ($topTvSeries['data'] as $index => $anime): ?>
             <div class="flex-1">
                 <img class="w-full h-full object-cover object-center" src="<?= $anime['node']['main_picture']['medium'] ?>" alt="<?= $anime['node']['title'] ?>">
             </div>
-            <div class="absolute bottom-full">
+            <div class="absolute w-[20em] p-3 flex flex-col gap-3 bg-[var(--tint-background-color)] <?= $index === 0 ? '' : 'hidden' ?>">
                 <div>
-                    <h1><?= $anime['node']['title'] ?></h1>
-                    <h1><?= $anime['node']['alternative_title']['ja'] ?></h1>
+                    <div class="flex justify-between items-center">
+                        <h1 class="text-2xl">
+                            <?= $anime['node']['title'] ?>
+                        </h1>
+                        <h1 class="flex items-center gap-2">
+                            <i class='bx  bx-star'  ></i> 
+                            <?= $anime['node']['mean'] ?? "N/A" ?>
+                        </h1>
+                    </div>
+                    <h1 class="text-[var(--tint-text-white)]"><?= $anime['node']['alternative_titles']['ja'] ?></h1>
                 </div>
-                <div>
+                <div class="flex gap-2">
                     <p><?= strtoupper($anime['node']['media_type']) ?></p>
-                    <p class="flex items-end gap-1"> 
+                    <p class="text-[var(--tint-text-white)]">•</p>
+                    <p class="flex items-end text-center gap-1 w-[5em] line-clamp-1"> 
                         <?php  foreach ($anime['node']['studios'] as $studio): ?>
-                        <?= strtoupper($studio['name']) ?>
+                        <?= $studio['name'] ?>
                         <?php endforeach ?>
                     </p>
+                    <p class="text-[var(--tint-text-white)]">•</p>
                     <p class="flex items-end gap-1">
                         </i> <?= strtoupper($anime['node']['rating']) ?>
                     </p>
+                    <p class="text-[var(--tint-text-white)]">•</p>
+                    <p class="flex items-end gap-1">
+                        </i> <?= $anime['node']['average_episode_duration'] ?>
+                    </p>
                 </div>
                 <div>
-                    <p><?= $anime['node']['synopsis'] ?></p>
+                    <p class="line-clamp-3 text-sm text-[var(--tint-text-white)]"><?= $anime['node']['synopsis'] ?></p>
                 </div>
                 <div>
                     <p>
+                        Episodes: <?= $anime['node']['num_episodes'] ?>
+                    </p>
+                    <p>
                         Start date: <?= $anime['node']['start_date'] ?>
+                    </p>
+                    <p>
+                        Status: <?= $anime['node']['status'] ?>
                     </p>
                 </div>
             </div>
