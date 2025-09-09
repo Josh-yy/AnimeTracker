@@ -11,20 +11,11 @@ $anime = new Api();
 
 $topAnimes = $anime->getCurrentTop10();
 
-$topTvSeries = $anime->getTopTVSeries();
+$topTvSeries = $anime->getAnimeInRanking('tv');
+$topTvSeries['data'] = formatHumanReadable($topTvSeries['data']);
 
-$topTvSeries['data'] = array_map(function($anime){
-    $rawDate = $anime['node']['start_date'] ?? null;
-    $rawDuration = $anime['node']['average_episode_duration'] ?? null;
-    $rawStatus = $anime['node']['status'] ?? null;
-    
-    $anime['node']['start_date'] = formatHumanDate($rawDate);
-    $anime['node']['average_episode_duration'] = formatHumanDuration($rawDuration);
-    $anime['node']['status'] = formatHumanText($rawStatus);
-
-    return $anime;
-
-}, $topTvSeries['data']);
+$popularAnime = $anime->getAnimeInRanking('bypopularity');
+$popularAnime['data'] = formatHumanReadable($popularAnime['data']);
 
 
 require 'views/index.view.php';
