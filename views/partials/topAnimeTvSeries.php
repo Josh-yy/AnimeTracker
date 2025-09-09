@@ -1,13 +1,13 @@
 <section class="flex flex-col gap-6 mb-[5em]">
     <div class="flex items-end justify-between">
         <h1 class="text-2xl ">Top Anime TV Series</h1>
-        <button class="text-[var(--tint-text-white)] hover:text-white">View more ></button>
+        <a href="/view-more?anime=tv" id="tv-series-view-more-button" class="flex items-center text-[var(--tint-text-white)] hover:text-white cursor-pointer">View more <i class='bx  bx-chevron-right' ></i> </a>
     </div>
-    <div class="flex gap-2">
+    <div id="grid-container" class="flex gap-2">
         <?php foreach ($topTvSeries['data'] as $index => $anime): ?>
             <div id="tv-series-image" class="flex-1 relative group">
                 <img class="w-full h-full object-cover object-center" src="<?= $anime['node']['main_picture']['medium'] ?>" alt="<?= $anime['node']['title'] ?>">
-                <div id="hover-details" class="group-hover:flex z-[100] bottom-[50%] <?= $index < count($topTvSeries['data']) - 2 ? 'left-[110%]' : 'right-[110%]' ?>  absolute p-3 flex-col gap-3 bg-[var(--tint-background-color)] hidden">
+                <div class="hover-details group-hover:flex z-[100] bottom-[50%] left-[110%]  absolute p-3 flex-col gap-3 bg-[var(--tint-background-color)] hidden">
                     <div>
                         <div class="flex gap-6 justify-between items-center text-nowrap">
                             <h1 class="text-xl">
