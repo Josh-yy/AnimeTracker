@@ -10,14 +10,15 @@
 
         <link rel="stylesheet" href="views/css/root.css">
         <link rel="stylesheet" href="views/css/home.css">
+        <link rel="stylesheet" href="views/css/navigation.css">
         <link rel="stylesheet" href="views/css/login-modal.css">
 
         <script src="/views/js/home.js" defer></script>
         <script src="/views/js/searchAnime.js" defer></script>
         <script src="/views/js/login-modal.js" defer></script>
         <script src="/views/js/navigation.js" defer></script>
-
-
+        <script src="/views/js/reposition.js" defer></script>
+   
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
