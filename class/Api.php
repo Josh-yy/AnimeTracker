@@ -60,9 +60,9 @@ class Api{
         return json_decode($animes, true);
     }
 
-    public function getTopTVSeries(){
+    public function getAnimeInRanking($rankingType){
         curl_setopt($this->handle, CURLOPT_URL,
-        "https://api.myanimelist.net/v2/anime/ranking?ranking_type=tv&fields=id,title,alternative_titles,start_date,synopsis,media_type,studios,status,genres,mean,num_episodes,average_episode_duration,rating&limit=8");
+        "https://api.myanimelist.net/v2/anime/ranking?ranking_type={$rankingType}&fields=id,title,alternative_titles,start_date,synopsis,media_type,studios,status,genres,mean,num_episodes,average_episode_duration,rating&limit=10");
 
         $animes = curl_exec($this->handle);
         curl_close($this->handle);
