@@ -24,3 +24,20 @@ function formatHumanText(string $string){
     return $string ? $splitString : "N/A";
 
 }
+
+function formatHumanReadable(array $animes){
+    $animes = array_map(function($anime){
+    $rawDate = $anime['node']['start_date'] ?? null;
+    $rawDuration = $anime['node']['average_episode_duration'] ?? null;
+    $rawStatus = $anime['node']['status'] ?? null;
+    
+    $anime['node']['start_date'] = formatHumanDate($rawDate);
+    $anime['node']['average_episode_duration'] = formatHumanDuration($rawDuration);
+    $anime['node']['status'] = formatHumanText($rawStatus);
+
+    return $anime;
+
+}, $animes);
+
+    return $animes;
+}
