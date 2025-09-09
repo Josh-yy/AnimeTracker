@@ -1,7 +1,5 @@
 <?php 
 
-use Vtiful\Kernel\Format;
-
 require 'class/Api.php';
 require 'class/Database.php';
 require 'helpers/helper.php';
