@@ -8,6 +8,8 @@ $routes = [
     '/login' => 'controllers/auth/login.php',
     '/register' => 'controllers/auth/register.php',
     '/logout' => 'controllers/auth/logout.php',
+    '/filter' => 'controllers/filter/index.php',
+    '/view-more' => 'controllers/view-more/index.php',
 ];
 
 function routeToController($url, $routes){
