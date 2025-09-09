@@ -6,6 +6,7 @@
         <?php require "modals/login.php" ?>
         <?php require "partials/topAiringAnime.php"; ?>
         <?php require "partials/topAnimeTvSeries.php"; ?>
+        <?php require "partials/topAnimePopular.php"; ?>
     </main>
 </body>
 </html>
