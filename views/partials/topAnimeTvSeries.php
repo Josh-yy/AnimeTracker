@@ -1,11 +1,7 @@
-<section class="top-full">
-    <div class="flex justify-between">
-        <div>
-            <h1 class="text-2xl ">Top Anime TV Series</h1>
-        </div>
-        <div>
-            <button class="text-[var(--tint-text-white)] hover:text-white">View more ></button>
-        </div>
+<section class="flex flex-col gap-6 mb-[5em]">
+    <div class="flex items-end justify-between">
+        <h1 class="text-2xl ">Top Anime TV Series</h1>
+        <button class="text-[var(--tint-text-white)] hover:text-white">View more ></button>
     </div>
     <div class="flex gap-2">
         <?php foreach ($topTvSeries['data'] as $index => $anime): ?>
